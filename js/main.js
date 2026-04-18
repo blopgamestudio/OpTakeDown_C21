@@ -1,28 +1,28 @@
-import { makeDefaultState } from "/js/gameState.js";
-import { talentDefs } from "/js/config/talents.js";
-import { achievementDefs } from "/js/config/achievements.js";
+import { makeDefaultState } from "./gameState.js";
+import { talentDefs } from "./config/talents.js";
+import { achievementDefs } from "./config/achievements.js";
 
-import { getCps } from "/js/systems/economySystem.js";
-import { buyUnit, buyUpgrade } from "/js/systems/shopSystem.js";
-import { saveGame, loadGame, resetSave } from "/js/systems/saveSystem.js";
-import { checkAchievements } from "/js/systems/achievementSystem.js";
-import { checkCampaignProgress } from "/js/systems/campaignSystem.js";
+import { getCps } from "./systems/economySystem.js";
+import { buyUnit, buyUpgrade } from "./systems/shopSystem.js";
+import { saveGame, loadGame, resetSave } from "./systems/saveSystem.js";
+import { checkAchievements } from "./systems/achievementSystem.js";
+import { checkCampaignProgress } from "./systems/campaignSystem.js";
 import {
   spawnBossIfNeeded,
   maybeSpawnRandomBoss,
   spawnUltraBossIfNeeded,
   tickBoss
-} from "/js/systems/bossSystem.js";
-import { triggerRandomEvent } from "/js/systems/eventSystem.js";
-import { buyTalent } from "/js/systems/talentSystem.js";
+} from "./systems/bossSystem.js";
+import { triggerRandomEvent } from "./systems/eventSystem.js";
+import { buyTalent } from "./systems/talentSystem.js";
 
-import { renderStats } from "/js/ui/renderStats.js";
-import { renderShops } from "/js/ui/renderShops.js";
-import { renderAchievements } from "/js/ui/renderAchievements.js";
-import { renderEvents } from "/js/ui/renderEvents.js";
-import { renderTalents } from "/js/ui/renderTalents.js";
-import { renderBoss } from "/js/ui/renderBoss.js";
-import { renderCampaign } from "/js/ui/renderCampaign.js";
+import { renderStats } from "./ui/renderStats.js";
+import { renderShops } from "./ui/renderShops.js";
+import { renderAchievements } from "./ui/renderAchievements.js";
+import { renderEvents } from "./ui/renderEvents.js";
+import { renderTalents } from "./ui/renderTalents.js";
+import { renderBoss } from "./ui/renderBoss.js";
+import { renderCampaign } from "./ui/renderCampaign.js";
 
 let game = loadGame(makeDefaultState());
 
