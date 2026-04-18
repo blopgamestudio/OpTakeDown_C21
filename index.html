@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C21 Hclick</title>
+
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/layout.css" />
+  <link rel="stylesheet" href="./css/panels.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <div id="app" class="wrapper">
+    <header class="panel">
+      <h1>Opération TakeDown</h1>
+      <p class="subtitle">Centre de Commandement C21</p>
+    </header>
+
+    <main class="grid-top">
+      <section class="panel" id="leftPanel">
+        <div id="campaignPanel"></div>
+        <div id="bossPanel"></div>
+        <div id="statsPanel"></div>
+        <button id="mainClick" class="main-button">RÉCOLTER L'ÉNERGIE</button>
+        <div id="logPanel" class="log"></div>
+        <div id="unitsSummary"></div>
+      </section>
+
+      <section class="panel" id="rightPanel">
+        <div class="two-col">
+          <div>
+            <h2>Unités</h2>
+            <div id="unitsShop" class="scroll-area"></div>
+          </div>
+          <div>
+            <h2>Améliorations</h2>
+            <div id="upgradesShop" class="scroll-area"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="bottom-grid">
+      <div class="panel">
+        <h2>Hauts faits</h2>
+        <div id="achievementsList" class="scroll-area"></div>
+      </div>
+
+      <div class="panel">
+        <h2>Journal de guerre</h2>
+        <div id="eventsList" class="scroll-area"></div>
+      </div>
+
+      <div class="panel">
+        <h2>Arbre de talents</h2>
+        <div id="talentTree" class="scroll-area"></div>
+      </div>
+    </section>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

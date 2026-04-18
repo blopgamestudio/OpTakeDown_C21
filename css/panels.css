@@ -1,0 +1,258 @@
+.panel {
+  background: rgba(5, 10, 5, 0.9);
+  border: 1px solid rgba(0, 255, 80, 0.35);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 0 20px rgba(0, 255, 80, 0.15);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.stat {
+  background: rgba(0, 255, 80, 0.08);
+  border: 1px solid rgba(0, 255, 80, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.stat span {
+  display: block;
+  font-size: 13px;
+  color: #a8ff9a;
+  margin-bottom: 6px;
+}
+
+.stat strong {
+  font-size: 22px;
+  color: #7cff5b;
+}
+
+.log {
+  min-height: 42px;
+  color: #8fff7d;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.main-button {
+  width: 100%;
+  height: 160px;
+  font-size: 26px;
+  font-weight: bold;
+  background: radial-gradient(circle, #0f3f0f, #000);
+  border: 1px solid #3fff2b;
+  color: #7cff5b;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-bottom: 14px;
+}
+
+.main-button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(63, 255, 43, 0.45);
+}
+
+.main-button:active {
+  transform: scale(0.98);
+}
+
+.campaign-box,
+.boss-box {
+  background: rgba(0, 255, 80, 0.05);
+  border: 1px solid rgba(0, 255, 80, 0.2);
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 14px;
+  background: #000;
+  border: 1px solid #3fff2b;
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 8px 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #3fff2b, #b6ff9a);
+  transition: width 0.2s ease;
+}
+
+.boss-fill {
+  background: linear-gradient(90deg, #8bff00, #2aff00);
+}
+
+.scroll-area {
+  max-height: 650px;
+  overflow-y: auto;
+  padding-right: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shop-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background: rgba(0, 255, 80, 0.05);
+  border: 1px solid rgba(0, 255, 80, 0.2);
+  border-radius: 12px;
+  padding: 12px;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.shop-item:hover {
+  background: rgba(0, 255, 80, 0.1);
+  box-shadow: 0 0 10px rgba(0, 255, 80, 0.1);
+}
+
+.shop-item h3 {
+  color: #7cff5b;
+  margin-bottom: 6px;
+}
+
+.shop-item p {
+  color: #b9ffb0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.shop-item small {
+  display: block;
+  margin-top: 6px;
+  color: #95ec89;
+}
+
+.buy-btn {
+  min-width: 170px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #3fff2b;
+  color: #001400;
+  font-weight: bold;
+  cursor: pointer;
+  transition: filter 0.2s, transform 0.2s;
+}
+
+.buy-btn:hover {
+  filter: brightness(1.05);
+}
+
+.buy-btn:active {
+  transform: scale(0.98);
+}
+
+.buy-btn:disabled {
+  background: #2a3a2a;
+  color: #777;
+  cursor: not-allowed;
+}
+
+.achievement-card,
+.event-card,
+.talent-card {
+  background: rgba(0, 255, 80, 0.05);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.achievement-card {
+  border-left: 4px solid #3fff2b;
+  box-shadow: 0 0 10px rgba(0, 255, 80, 0.12);
+}
+
+.achievement-card.locked {
+  opacity: 0.4;
+  border-left-color: #506a50;
+  box-shadow: none;
+}
+
+.achievement-card strong,
+.event-card strong,
+.talent-card strong {
+  display: block;
+  color: #7cff5b;
+  margin-bottom: 6px;
+}
+
+.achievement-card p,
+.event-card p,
+.talent-card p {
+  color: #b8ffb1;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.event-card {
+  border-left: 4px solid #3fff2b;
+}
+
+.event-card.good {
+  border-left-color: #3fff2b;
+}
+
+.event-card.bad {
+  border-left-color: #ff4b4b;
+}
+
+.talent-card {
+  border: 1px solid rgba(12, 224, 37, 0.814);
+}
+
+.talent-card small {
+  display: block;
+  margin-top: 8px;
+  color: #9be58f;
+}
+
+.talent-card button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #4fe13f;
+  color: #001400;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.talent-card button:disabled {
+  background: #2a3a2a;
+  color: #777;
+  cursor: not-allowed;
+}
+
+.floating-text {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  color: #90c782;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 0 0 10px rgba(47, 232, 23, 0.7);
+  animation: floatUp 0.8s ease-out forwards;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+}
