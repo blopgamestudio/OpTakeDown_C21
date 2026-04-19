@@ -1,7 +1,0 @@
-@media (max-width: 1100px) {
-  .grid-top,
-  .bottom-grid,
-  .two-col {
-    grid-template-columns: 1fr;
-  }
-}
