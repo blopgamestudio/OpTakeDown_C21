@@ -1,4 +1,4 @@
-import { campaignSteps } from "../config/campaigns.js";
+import { unitDefs } from "../config/units.js";
 
 const infantryUnits = ["marine", "hellbringer", "odst", "spartan2"];
 const heavyUnits = ["warthog", "elephant", "wolverine", "cougar", "scorpion", "hornet", "pelican", "longsword", "gladius", "stalwart", "marathon"];
